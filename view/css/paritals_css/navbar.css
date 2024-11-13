@@ -1,0 +1,237 @@
+.navbar {
+  background-color: #004aad !important;
+  color: white;
+}
+
+.navbar-toggler {
+  --bs-navbar-color: rgb(255 255 255 / 65%);
+  --bs-navbar-toggler-border-color: rgb(255 255 255 / 15%);
+}
+.navbar-toggler .fa-bars {
+  color: white;
+  box-shadow: 0;
+}
+.navbar .nav-item .nav-link {
+  font-family: "Poppins", "sans-serif";
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #0257c7;
+  column-gap: 10px;
+  justify-content: center;
+  
+}
+.--bs-dropdown-min-width{
+  min-width: 100px !important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  width: 100%;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.normal-nav{
+  width: 7.85em;
+}
+.user-dropdown{
+  min-width: 160px;
+}
+
+
+/*!---------------SideBar Css-----------------  */
+/* Yan Menü (Sidebar) Stili */
+.offcanvas-body {
+    background-color: #fff; /* Yan menü arka plan rengi */
+    color: #000 !important; /* Yan menü metin rengi */
+  }
+  
+  .offcanvas-header {
+    background-color: #f8f9fa; /* Yan menü başlık arka plan rengi */
+    color: #000; /* Yan menü başlık metin rengi */
+  }
+  
+  .offcanvas-header .btn-close {
+    color: #000; /* Yan menü kapatma düğmesi rengi */
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .b-example-divider {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+  }
+  
+  .dropdown-toggle { outline: 0; }
+  
+  .nav-flush .nav-link {
+    border-radius: 0;
+  }
+  
+  .btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+    border: 0;
+  }
+  .btn-toggle:hover,
+  .btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: #d2f4ea;
+  }
+  
+  .btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+  }
+  
+  .btn-toggle[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+  }
+  .btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+  }
+  
+  .btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+  }
+  .btn-toggle-nav a:hover,
+  .btn-toggle-nav a:focus {
+    background-color: #d2f4ea;
+  }
+  
+  .scrollarea {
+    overflow-y: auto;
+  }
+  
+  .fw-semibold { font-weight: 600; }
+  .lh-tight { line-height: 1.25; }
+  
+
+/* ! ------------------Responsive Tasarım------------- */
+
+/* Mobil cihazlar için (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .nav-item .nav-link{
+        color: #000;
+    }
+    .navbar-collapse{
+        display: none;
+    }
+  }
+
+/* Dikey tabletler için (768px - 991px arası) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #2b2b2b75;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .nav-item .nav-link {
+        color: #dbdbdb !important;
+    }
+}
+
+/* Yatay tablet ve minibook laptoplar için (992px - 1199px arası) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .nav-item .nav-link {
+        color: white !important;
+    }
+}
+
+/* Notebook ve desktop bilgisayarlar için (1200px ve üstü) */
+@media only screen and (min-width: 1200px) {
+    .nav-item .nav-link {
+        color: white !important;
+    }
+}
+
+
+/*!-------------------Navbar İlan Ver Butonu------------------- */
+#ilan_ver_button {
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate-icon {
+  transition: transform 0.3s;
+}
+.rotate-icon.open {
+  transform: rotate(180deg);
+}
+
+
+.dropdown-divider {
+  margin: 0;
+}
+
+/* !!!Kullanıcı adı foto */
+.username-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.username {
+  display: inline-block;
+  max-width: 100px; /* İstediğiniz genişliği belirleyin */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+

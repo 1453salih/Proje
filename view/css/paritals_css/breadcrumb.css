@@ -1,0 +1,38 @@
+.bread-crumb {
+    border-bottom: 1px solid #efefef !important;
+}
+
+.bread-crumb {
+    background-color: rgb(255, 255, 255);
+    display: flex !important;
+    align-items: center !important;
+}
+
+.breadcrumb-frame {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    --bs-breadcrumb-margin-bottom: 0;
+}
+
+.breadcrumb-item {
+    color: white;
+}
+
+.breadcrumb li {
+    color: rgb(255, 123, 0) !important;
+    font-weight: 600;
+}
+
+.breadcrumb li a {
+    color: rgb(32, 32, 32);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+    color: darkblue !important;
+}

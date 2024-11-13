@@ -1,0 +1,190 @@
+.job-description, .job-summary, .map-error , .konum_tercihleri {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-description h1 {
+    font-size: 2em;
+}
+
+.job-description p {
+    margin: 0.5em 0;
+}
+
+.job-summary h2, .job-description h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.map-error {
+    text-align: center;
+    color: red;
+}
+/* ! ---------------İlan Görseli------------- */
+
+.job-postings {
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .job-postings::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #004aad;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  .job-postings:hover{
+    box-shadow: 0 0 5px rgba(0, 15, 80, 0.4);
+  }
+  
+  .job-postings:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* ! ------------------Responsive Tasarım------------- */
+
+/* Mobil cihazlar için (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+    #job-image {
+      width: 80px;
+    }
+    .main {
+      min-width: 400px;
+      border: none !important;
+      padding: 0.5rem !important;
+    }
+    .job-postings {
+      padding: 0.5rem !important;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 3px rgba(0, 15, 80, 0.1);
+      margin: 1px;
+    }
+    .posting-details {
+      display: flex;
+      column-gap: 10px;
+    }
+    .posting-details p:first-child {
+      order: 1;
+    }
+    .main-top{
+        display: none !important;
+    }
+    .posting-details p{
+        font-size: 8px;
+    }
+    .posting-title h3{
+        font-size: 12px;
+    }
+    .posting-title p {
+        font-size: 10px;
+    }
+  }
+
+/* Dikey tabletler için (768px - 991px arası) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    min-width: 700px;
+    padding: 3rem;
+  }
+  #job-image {
+    width: 100px;
+  }
+  .posting-details p{
+    font-size: 12px;
+  }
+  .posting-title h3{
+      font-size: 20px;
+  }
+  .posting-title p {
+      font-size: 15px;
+  }
+}
+
+/* Yatay tablet ve minibook laptoplar için (992px - 1199px arası) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #job-image {
+    width: 100px;
+  }
+  .container{
+    padding-right:0px !important;
+    padding-left: 0px !important;
+  }
+  .main {
+    min-width: 500px;
+    padding: 1rem;
+  }
+  .posting-details p{
+    font-size: 12px;
+  }
+  .posting-title h3{
+      font-size: 20px;
+  }
+  .posting-title p {
+      font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #job-image {
+    width: 120px;
+  }
+  .container{
+    padding-right:0px !important;
+    padding-left: 0px !important;
+  }
+  .main {
+    min-width: 700px;
+    padding: 1rem;
+  }
+  .posting-details p{
+    font-size: 12px;
+  }
+  .posting-title h3{
+      font-size: 20px;
+  }
+  .posting-title p {
+      font-size: 15px;
+  }
+}
+
+
+/* Notebook ve desktop bilgisayarlar için (1200px ve üstü) */
+@media only screen and (min-width: 1400px) {
+  #job-image {
+    width: 120px;
+  }
+  .main{
+    padding: 20px;
+  }
+}
+
+/* !----------------İşveren Konum Tercihleri----------------- */
+
+.badge{
+  color: #4ea0ff;
+  border:1px solid #dfdfdf;
+  background-color: #f8f8f8;
+  padding: 15px;
+  font-size: 12px;
+}

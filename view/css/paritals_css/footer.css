@@ -1,0 +1,77 @@
+.footer {
+    background-color: #001d38;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer .nav-link {
+    color: #b0b0b0;
+    transition: color 0.3s;
+}
+
+.footer .nav-link:hover {
+    color: #fff;
+}
+
+.footer .form-control,
+.footer .btn-primary {
+    border-radius: 0;
+    height: 48px;
+}
+
+.footer .btn-primary {
+    background-color: #f58220;
+    border: 2px solid transparent;
+    color: #fff;
+    width: 100%;
+}
+
+.footer .btn-primary:hover {
+    background-color: #fff;
+    color: #f58220;
+    border: 2px solid #f58220;
+}
+
+.footer .border-top {
+    border-color: #444;
+}
+
+.footer .d-flex {
+    align-items: center;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.footer .list-unstyled .link-body-emphasis {
+    color: #b0b0b0;
+    transition: color 0.3s;
+}
+
+.footer .list-unstyled .link-body-emphasis:hover {
+    color: #fff;
+}
+
+.link-body-emphasis {
+    color: #0056b3; /* Link rengi mavi */
+    text-decoration: none;
+}
+.link-body-emphasis:hover {
+    color: #003d80;
+}
+svg {
+    fill: white; /* SVG'nin rengini link renginden alır */
+}
+@media (min-width: 576px) {
+    .footer .btn-primary {
+        width: auto;
+    }
+}

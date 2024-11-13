@@ -1,0 +1,179 @@
+/* ! --------------Responsive Ayarlar-------------- */
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none;
+	}
+	.register_form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+	.content_left{
+		display: none;
+	}
+	.main_body{
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (min-width: 640px) and (max-width:800px){
+	.main-content{width: 90%;}
+    .company__info{
+		display: none;
+	}
+	.content_left{
+		display: none;
+	}
+	.main_body{
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (min-width: 800px) and (max-width:992px){
+	.main-content{width: 80%;}
+    .company__info{
+		display: none;
+	}
+	.content_left{
+		display: none;
+	}
+	.main_body{
+		display: flex;
+		justify-content: center;
+	}
+	.register_form{
+		max-width: 900px !important;
+	}
+}
+@media screen and (min-width: 992px) and (max-width:1200px){
+	.main-content{width: 90%;}
+	.main_body{
+		display: flex;
+		justify-content: space-between;
+		column-gap: 15px;
+	}
+	.register_form{
+		max-width: 500px;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width:1400px){
+	.main-content{width: 90%;}
+	.main_body{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 1400px) {
+	.main_body{
+		display: flex;
+		justify-content: space-between;
+	}
+	.register_form{
+		min-width: 600px;
+	}
+}
+/* ! --------------Form Alanı Stilleri-------------- */
+.row > h2{
+	color:#004aad;
+}
+.register_form{
+	display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 26px 30px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.20);
+}
+form{
+	padding: 0 2em;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1.5em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #004aad;
+	box-shadow: 0 0 5px rgba(0, 15, 80, 0.4); 
+	border-radius: 4px;
+}
+.btn{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#004aad;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #004aad;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.btn:hover, .btn:focus{
+	background-color: #004aad;
+	color:#fff;
+}
+/* ! --------------Form Başlık-------------- */
+.form_title{
+	color: #004aad;
+	
+}
+/* ! --------------Üye Değil Misin Sorusu-------------- */
+.form_soru a{
+	text-decoration: none;
+	color: darkorange;
+}
+
+/* ! --------------Kayıt Ekranı Card Stilleri -------------- */
+.icon_div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.icon_loc{
+	border-radius: 50%;
+	background-color: #fff;
+}
+.card{
+	background-color: #f4f6fc;
+}
+.card-title{
+	color: #004aad;
+}
+
+
+/* !-------------Main  */
+
+.main_body{
+	min-height: 100vh;
+}
+
+/*!------------Telefon İnput-------------------  */
+
+.input-icon-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.phone-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    pointer-events: none; /* Input içine tıklanabilir alanı engellememesi için */
+	font-size: 20px;
+}
+
+.form__input {
+    padding-left: 40px; /* İkonun genişliğine göre padding ekleyin */
+    width: 100%;
+}

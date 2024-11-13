@@ -1,0 +1,159 @@
+
+form {
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+label {
+  font-weight: bold;
+}
+.form-check-label{
+    font-weight: 400;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+#submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#submit-button:hover {
+  background-color: #45a049;
+}
+
+/* !---------Buton------------- */
+
+input[type="search"] {
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  height: 40px;
+  width: 250px;
+}
+input[type="search"]:focus {
+  border-bottom-color: #004aad;
+  box-shadow: 0 0 5px rgba(0, 15, 80, 0.4);
+}
+
+#search_button,
+#search_button_tag {
+  border: none !important;
+  padding-inline: 0px !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search-frame {
+  position: relative;
+}
+
+/* İnput içindeki ikonu pozisyonlar */
+.bi-search {
+  position: absolute;
+  top: 70%;
+  left: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* !-------------Şehir autocomplete-------------- */
+.autocomplete-items {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 11px;
+    right: 0;
+    width: 250px !important;
+    overflow: auto;
+    height: 200px;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  
+
+  /* ! */
+
+.autocomplete-selected {
+  display: flex;
+  flex-wrap: wrap;
+}
+.autocomplete-selected-item {
+    background-color: #e9e9e9;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+  .locations {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/location.svg');
+    background-size: 24px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
+  .locations:focus{
+    border-bottom: 2px solid #004aad;
+  }
+  .remove-btn {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* ! ----------------------Select2--------------- */
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 20px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  position: absolute;
+  top: 10px;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  color: #cf0303;
+  font-size: 20px !important;
+}
